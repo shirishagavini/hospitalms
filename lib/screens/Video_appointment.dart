@@ -2,11 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:hospitalms/screens/PatientHomeScreen.dart';
 import 'package:hospitalms/screens/video_calling/videocall.dart';
 
-class VideoAppointmentPage extends StatelessWidget {
+class VideoAppointmentPage extends StatelessWidget
+{
   const VideoAppointmentPage({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context)
+  {
     TextEditingController _roomController = TextEditingController();
     TextEditingController _usernamecontroller = TextEditingController();
     return SafeArea(

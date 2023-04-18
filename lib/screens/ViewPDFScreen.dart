@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 
-class PDFView extends StatefulWidget {
+class PDFView extends StatefulWidget
+{
   final prescriptionUrl;
   const PDFView({super.key, required this.prescriptionUrl});
 
@@ -9,11 +10,13 @@ class PDFView extends StatefulWidget {
   State<PDFView> createState() => _PDFViewState();
 }
 
-class _PDFViewState extends State<PDFView> {
+class _PDFViewState extends State<PDFView>
+{
   PdfViewerController? _pdfViewerController;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context)
+  {
     return Scaffold(
       appBar: AppBar(
         title: Text("PDF Viewer"),

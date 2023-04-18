@@ -5,7 +5,8 @@ import 'package:hospitalms/screens/PatientAppointmentDetailsScreen.dart';
 import 'package:hospitalms/screens/ViewdetailsForLab.dart';
 import 'package:hospitalms/screens/video_calling/videocall.dart';
 
-class AppointmentListForLabs extends StatefulWidget {
+class AppointmentListForLabs extends StatefulWidget
+{
   const AppointmentListForLabs({super.key});
 
   @override

@@ -7,7 +7,8 @@ import 'package:file_picker/file_picker.dart';
 import 'package:get/get.dart';
 import 'package:hospitalms/screens/LabHomeScreen.dart';
 
-class DetailsPageForLab extends StatefulWidget {
+class DetailsPageForLab extends StatefulWidget
+{
   final String patient_name;
   final String patient_email;
   final String patient_problem;
@@ -25,12 +26,14 @@ class DetailsPageForLab extends StatefulWidget {
   State<DetailsPageForLab> createState() => _DetailsPageForLabState();
 }
 
-class _DetailsPageForLabState extends State<DetailsPageForLab> {
+class _DetailsPageForLabState extends State<DetailsPageForLab>
+{
   TextEditingController testNameTextEditingController = TextEditingController();
 
   String url = "";
   int? number;
-  uploadDataToFirebase() async {
+  uploadDataToFirebase() async
+  {
     FilePickerResult? result = await FilePicker.platform.pickFiles();
     File pick = File(result!.files.single.path.toString());
     var file = pick.readAsBytesSync();
@@ -56,7 +59,8 @@ class _DetailsPageForLabState extends State<DetailsPageForLab> {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context)
+  {
     final user = FirebaseAuth.instance.currentUser;
     return Scaffold(
       appBar: AppBar(
@@ -70,7 +74,8 @@ class _DetailsPageForLabState extends State<DetailsPageForLab> {
                   .collection("appointments")
                   .where("doctorId", isEqualTo: user!.uid)
                   .get(),
-              builder: (context, snapshot) {
+              builder: (context, snapshot)
+              {
                 return Container(
                   margin: const EdgeInsets.all(15),
                   alignment: Alignment.center,

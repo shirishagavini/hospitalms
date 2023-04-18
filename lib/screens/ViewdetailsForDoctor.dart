@@ -8,7 +8,8 @@ import 'package:hospitalms/screens/ViewPDFScreen.dart';
 
 import 'DoctorHomeScreen.dart';
 
-class DetailsPageForDoctor extends StatefulWidget {
+class DetailsPageForDoctor extends StatefulWidget
+{
   final String patient_name;
   final String patient_email;
   final String patient_problem;
@@ -26,7 +27,8 @@ class DetailsPageForDoctor extends StatefulWidget {
   State<DetailsPageForDoctor> createState() => _DetailsPageForDoctorState();
 }
 
-class _DetailsPageForDoctorState extends State<DetailsPageForDoctor> {
+class _DetailsPageForDoctorState extends State<DetailsPageForDoctor>
+{
   String url = "";
   int? number;
   uploadDataToFirebase() async {
@@ -47,7 +49,8 @@ class _DetailsPageForDoctorState extends State<DetailsPageForDoctor> {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context)
+  {
     final user = FirebaseAuth.instance.currentUser;
     return Scaffold(
       appBar: AppBar(
