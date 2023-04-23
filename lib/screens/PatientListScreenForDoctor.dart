@@ -18,7 +18,8 @@ class _PatientListPageState extends State<PatientListPage> {
             .collection("users")
             .where("uid", isEqualTo: userId)
             .get(),
-        builder: (context, usersnapshot) {
+        builder: (context, usersnapshot)
+        {
           return usersnapshot.hasData
               ? Padding(
                   padding: const EdgeInsets.only(bottom: 10),

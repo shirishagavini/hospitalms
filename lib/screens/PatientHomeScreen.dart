@@ -56,7 +56,8 @@ Widget _buildHomeBanner() {
   );
 }
 
-class _PatientHomeScreenState extends State<PatientHomeScreen> {
+class _PatientHomeScreenState extends State<PatientHomeScreen>
+{
   bool isLoading = false;
   @override
   Widget build(BuildContext context) {
@@ -77,7 +78,8 @@ class _PatientHomeScreenState extends State<PatientHomeScreen> {
                       .collection("users")
                       .doc(user.uid)
                       .get(),
-                  builder: (context, snapshot) {
+                  builder: (context, snapshot)
+                  {
                     return Row(
                       children: [
                         Container(

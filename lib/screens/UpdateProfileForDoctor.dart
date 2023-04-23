@@ -11,7 +11,8 @@ import 'package:intl/intl.dart';
 import 'package:uuid/uuid.dart';
 import 'dart:io';
 
-class UpdateDocProfilePage extends StatefulWidget {
+class UpdateDocProfilePage extends StatefulWidget
+{
   final String? fname;
   final String? lname;
   final String? DocID;
@@ -21,7 +22,8 @@ class UpdateDocProfilePage extends StatefulWidget {
   State<UpdateDocProfilePage> createState() => _UpdateDocProfilePageState();
 }
 
-class _UpdateDocProfilePageState extends State<UpdateDocProfilePage> {
+class _UpdateDocProfilePageState extends State<UpdateDocProfilePage>
+{
   XFile? image;
   File? imageFile;
   String? imageUrl;

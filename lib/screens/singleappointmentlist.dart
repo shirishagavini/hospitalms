@@ -13,9 +13,11 @@ class SingleAppointmentListPage extends StatefulWidget {
       _SingleAppointmentListPageState();
 }
 
-class _SingleAppointmentListPageState extends State<SingleAppointmentListPage> {
+class _SingleAppointmentListPageState extends State<SingleAppointmentListPage>
+{
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context)
+  {
     final user = FirebaseAuth.instance.currentUser;
     return Scaffold(
       appBar: AppBar(
