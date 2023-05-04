@@ -2,13 +2,15 @@ import "package:flutter/material.dart";
 import "package:uuid/uuid.dart";
 import "package:zego_uikit_prebuilt_video_conference/zego_uikit_prebuilt_video_conference.dart";
 
-class VideoConference extends StatelessWidget {
+class VideoConference extends StatelessWidget
+{
   const VideoConference({super.key, required this.conferenceId, this.name});
   final String conferenceId;
   final String? name;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context)
+  {
     final userId = const Uuid().v1();
     return SafeArea(
       child: ZegoUIKitPrebuiltVideoConference(

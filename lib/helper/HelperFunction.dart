@@ -41,12 +41,14 @@ class HelperFunctions {
     return prefs.getString(sharedPreferenceIdKey);
   }
 
-  static Future<bool?> getUserLoggedInSharedPreference() async {
+  static Future<bool?> getUserLoggedInSharedPreference() async
+  {
     final prefs = await SharedPreferences.getInstance();
     return prefs.getBool(sharedPreferenceLoggedInKey);
   }
 
-  static Future<String?> getUserNameSharedPreference() async {
+  static Future<String?> getUserNameSharedPreference() async
+  {
     final prefs = await SharedPreferences.getInstance();
     return prefs.getString(sharedPreferenceNameKey);
   }

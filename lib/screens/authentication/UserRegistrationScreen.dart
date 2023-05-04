@@ -44,10 +44,12 @@ class _PatientRegistrationPageState extends State<PatientRegistrationPage> {
   }
 
   //IMAGE UPLOADING
-  void imgAlert() {
+  void imgAlert()
+  {
     showDialog(
       context: this.context,
-      builder: (BuildContext context) {
+      builder: (BuildContext context)
+      {
         return AlertDialog(
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
           title: Text('Please choose the media option'),

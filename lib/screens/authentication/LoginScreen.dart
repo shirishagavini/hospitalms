@@ -21,7 +21,8 @@ class LoginPage extends StatefulWidget {
   State<LoginPage> createState() => _LoginPageState();
 }
 
-class _LoginPageState extends State<LoginPage> {
+class _LoginPageState extends State<LoginPage>
+{
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   bool isLoading = false;
   String loginerror = "";

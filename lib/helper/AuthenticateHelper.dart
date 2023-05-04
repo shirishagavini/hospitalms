@@ -5,7 +5,8 @@ import '../screens/authentication/LoginScreen.dart';
 
 // import '../screens/signup.dart';
 
-class Authenticate extends StatefulWidget {
+class Authenticate extends StatefulWidget
+{
   const Authenticate({super.key});
 
   @override
