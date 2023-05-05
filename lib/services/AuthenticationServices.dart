@@ -10,11 +10,13 @@ class AuthMethods {
   // }
 
   Future<User?> signInWithEmailAndPassword(
-      String email, String password) async {
+      String email, String password) async
+  {
     FirebaseAuth _auth = FirebaseAuth.instance;
     FirebaseFirestore _firestore = FirebaseFirestore.instance;
 
-    try {
+    try
+    {
       UserCredential userCredential = await _auth.signInWithEmailAndPassword(
           email: email, password: password);
 

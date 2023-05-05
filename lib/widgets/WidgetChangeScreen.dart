@@ -12,7 +12,8 @@ class ChangeScreen extends StatelessWidget {
   final String whichAccount;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context)
+  {
     return Container(
       margin: const EdgeInsets.symmetric(vertical: 20),
       child: Row(
