@@ -6,7 +6,8 @@ class MyButton extends StatelessWidget {
   const MyButton({required this.name, required this.onPressed, super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context)
+  {
     return Container(
       height: 45,
       margin: const EdgeInsets.symmetric(vertical: 12),

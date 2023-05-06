@@ -14,7 +14,8 @@ class PasswordTextField extends StatelessWidget {
       super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context)
+  {
     return TextFormField(
       validator: (value) {
         validator;
